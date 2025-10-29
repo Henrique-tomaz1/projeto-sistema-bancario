@@ -13,20 +13,8 @@ menu = """"
 tipo_conta = input(menu)
 
 if tipo_conta == "1":
-    
 
-
-
-
-
-
-
-
-
-
-
-
-menu = """
+    menu = """
 
 ########## SEJA BEM VINDO ##########
 
@@ -93,6 +81,7 @@ while True:
     else:
         print ("Operação inválida, por favor selecione novamente a opção desejada!") 
 
+#comentario
 
 
 
