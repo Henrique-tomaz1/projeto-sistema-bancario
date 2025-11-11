@@ -59,18 +59,32 @@
 # else:
 #     print("Não possui o numero 10")
 
-def caixa(valor):
-    preco_final = 0.00
-    if valor >= 100:
-        preco_final = valor * 0.85
+# def caixa(valor):
+#     preco_final = 0.00
+#     if valor >= 100:
+#         preco_final = valor * 0.85
 
-    elif 50 <= valor <= 99.99:
-        preco_final = valor *0.90
+#     elif 50 <= valor <= 99.99:
+#         preco_final = valor *0.90
 
-    else:
-        preco_final = valor
+#     else:
+#         preco_final = valor
 
-    return preco_final
+#     return preco_final
 
-total_caixa = caixa(90)
-print(f"O valor para pagamento deve ser de {total_caixa:.2f}")
+# total_caixa = caixa(90)
+# print(f"O valor para pagamento deve ser de {total_caixa:.2f}")
+
+
+def adicionar_antesdepois(happy):
+    def wharper():
+        print("antes do parabéns")
+        happy()
+        print("Depois do parabéns")
+    return wharper
+
+@adicionar_antesdepois
+def happy():
+    print("parabéns")
+    
+happy()
